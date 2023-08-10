@@ -2,13 +2,13 @@
 
 @section('content')
     <div class="container mx-auto px-4">
-        <div class="game-details border-b border-gray-800 pb-12 flex">
+        <div class="game-details border-b border-gray-800 pb-12 flex flex-col lg:flex-row">
             <div class="flex-non">
                 <img src="{{ asset('img/valorant.jpg') }}" alt="description of my image" class="rounded-md" >
             </div>
-            <div class="ml-12 mr-64">
-                <h2 class="font-semibold text-4xl">Valorant</h2>
-                <div class="text-gray-400">
+            <div class="lg:ml-12 lg:mr-64">
+                <h2 class="font-semibold text-4xl leading-tight mt-1 ml-24 pl-12 lg:ml-0 lg:pl-0">Valorant</h2>
+                <div class="text-gray-400 ml-20 pl-9 lg:ml-0 lg:pl-0">
                     <span>Riot Games</span>
                     &middot;
                     <span>Square Enix</span>
@@ -16,7 +16,7 @@
                     <span>PC</span>
                 </div>
                 <div class="flex flex-wrap items-center mt-8 ">
-                    <div class="flex item-center">
+                    <div class="flex item-center ml-12 pl-2 lg:ml-0 lg:pl-0">
                         <div class="w-16 h-16 bg-gray-800 rounded-full">
                             <div class="font-semibold text-xs flex justify-center items-center h-full">90%</div>
                         </div>
@@ -28,7 +28,7 @@
                         </div>
                         <div class="ml-4 text-xs mt-3">Critic <br> Score</div>
                     </div>
-                    <div class="flex items-center space-x-4 ml-12">
+                    <div class="flex items-center space-x-4 mt-4 ml-12 pl-12 lg:mt-0 lg:ml-12">
                         <div class="w-8 h-8 bg-gray-800 rounded-full flex justify-center items-center">
                             <a href="#" class="hover:text-gray-400">
                                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="25" height="25" class="rounded-full" viewBox="0 0 466.337 466.337"><path d="M233.168 0C104.604 0 0 104.604 0 233.168c0 128.565 104.604 233.169 233.168 233.169 128.565 0 233.169-104.604 233.169-233.169C466.337 104.604 361.733 0 233.168 0zm-9.184 441.874c-22.321 0-46.405-41.384-59.045-107.815h118.067c-12.635 66.431-36.69 107.815-59.022 107.815zm-62.87-131.73c-2.738-19.991-4.437-41.781-4.881-65.018H291.74c-.443 23.237-2.148 45.027-4.869 65.018H161.114zM24.521 245.126h107.704c.443 21.883 2.09 43.859 4.887 65.018H38.768c-8.075-20.318-12.95-42.178-14.247-65.018zM223.984 24.464c21.982 0 45.687 40.14 58.484 104.877h-116.97c12.788-64.737 36.498-104.877 58.486-104.877zm62.479 128.781c2.978 20.785 4.811 43.596 5.277 67.966H156.222c.467-24.37 2.295-47.169 5.272-67.966h124.969zm-154.237 67.966H24.521c1.354-23.926 6.568-46.836 15.332-67.966h97.656c-3.047 22.075-4.828 45.067-5.283 67.966zm183.523 23.915h126.065c-1.296 22.84-6.188 44.7-14.246 65.018H310.855c2.791-21.159 4.45-43.135 4.894-65.018zm0-23.915c-.468-22.898-2.254-45.891-5.29-67.966h116.023c8.77 21.13 13.978 44.04 15.332 67.966H315.749zm98.847-91.881H306.617c-7.894-42.067-20.727-78.844-38.195-102.222 62.53 10.691 115.638 49.097 146.174 102.222zM176.073 32.036c-15.7 23.459-27.348 58.1-34.699 97.305H51.741C78.657 82.505 123.064 47.1 176.073 32.036zM49.96 334.058h90.895c7.311 40.403 19.133 76.205 35.219 100.26-54.13-15.414-99.402-51.94-126.114-100.26zm218.45 105.164c17.865-23.938 30.874-61.889 38.697-105.164h109.274c-30.231 54.685-84.261 94.281-147.971 105.164z"/></svg>
@@ -60,7 +60,7 @@
                 </p>
 
                 <div class="mt-12">
-                    <button class="flex bg-blue-500 text-white font-semibold px-4 py-4 hover:bg-blue-600 transition ease-in-out duration-150 rounded-lg">
+                    <button class="flex bg-blue-500 text-white font-semibold px-4 py-4 hover:bg-blue-600 transition ease-in-out duration-150 rounded-lg ml-32  lg:ml-0 lg:pl-0">
                         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="25" height="25" viewBox="0 0 60 60"><path d="m45.563 29.174-22-15A1 1 0 0 0 22 15v30a.999.999 0 0 0 1.563.826l22-15a1 1 0 0 0 0-1.652zM24 43.107V16.893L43.225 30 24 43.107z"/><path d="M30 0C13.458 0 0 13.458 0 30s13.458 30 30 30 30-13.458 30-30S46.542 0 30 0zm0 58C14.561 58 2 45.439 2 30S14.561 2 30 2s28 12.561 28 28-12.561 28-28 28z"/></svg>
                      <span class="ml-2">Play Trailer</span>
                     </button>
@@ -70,7 +70,7 @@
 
         <div class="images-container border-b border-gray-800 pb-12 mt-8">
             <h2 class="text-blue-500 uppercase tracking-wide font-semibold"> Images</h2>
-            <div class="grid grid-cols-3  gap-12  mt-8">
+            <div class="gap-12 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  mt-8 ">
 
                 <div>
                     <a href="#">
@@ -113,7 +113,7 @@
 
         <div class="similar-games-container  mt-8 mr-12 pr-5">
             <h2 class="text-blue-500 uppercase tracking-wide font-semibold"> Similar Games</h2>
-            <div class="popular-games text-sm grid sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-5 xl:grid-cols-6 grid-cols-6 gap-12 mb-2">
+            <div class="popular-games text-sm grid sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-5 xl:grid-cols-6 gap-12 mb-2">
                 <div class="game mt-8">
                     <div class="relative inline-block">
                         <a href="#">
